@@ -2,7 +2,7 @@ $(function() {
 
   $.ajax({
     url: 'https://www.codeschool.com/users/petrkirchneravg.json',
-    dataType: 'json',
+    dataType: 'jsonp',
     success: function(response) {
       console.log('response', response.courses.completed);
       addCourses(response.courses.completed);
